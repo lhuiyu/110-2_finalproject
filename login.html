@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/title.png">
+    <title>LateNight Record | LOGIN</title>
+    <style>
+        @import url("css/nav2.css");
+        @import url("css/func.css");
+        @import url("css/login.css");
+        @import url("css/footer.css");
+    </style>
+
+</head>
+
+<body>
+    <div class="bg">
+        <!--店名、功能列-->
+        <div class="box">
+            <!--解決header fixed後遮到main上方部分內容-->
+            <header>
+                <div class="above">
+                    <a href="index.html" class="a-name">
+                        <div class="name">&nbsp;LateNight Record</div>
+                    </a>
+                    <div class="func">
+                        <a href="cart.html" class="a-func">CART</a>&emsp;
+                        <a href="login.html" class="a-func">LOGIN</a>&emsp;
+
+                        <!--功能頁-->
+                        <div class="menucont">
+                            <input type="checkbox" id="open" class="checkbox">
+                            <div class="func1">
+                                <label for="open" id="l">
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                </label>
+                            </div>
+                            <div class="menuo">
+                                <table class="mt">
+                                    <tr>
+                                        <td><a href="allproducts.html">ALL PRODUCTS</a></td>
+                                        <td><a href="aboutus.html">ABOUT US</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #inter" class="ac">INTERNATIONAL</a></td>
+                                        <td><a href="memberinfo.html" class="ac">Member Center</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #mand" class="ac">MANDARIN</a></td>
+                                        <td>
+                                            <input type="text" placeholder="Search" class="search">
+                                            <input type="button" value="search" class="sbt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #kor" class="ac">KOREAN</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="under"></div>
+            </header>
+        </div>
+
+        <main>
+            <form>
+                <fieldset>
+                    <legend>LOGIN</legend>
+                    <div class="inner">
+                        <p><label>ACCOUNT&ensp;&nbsp;：</label><input type="text" class="input"></p>
+                        <br>
+                        <p><label>PASSWORD：</label><input type="password" class="input"></p>
+                        <br><br>
+                        <input type="submit" value="login" class="bt" id="bt1">
+                        <br>
+                    </div>
+                </fieldset>
+            </form>
+
+            <hr>
+            <a href="signup.html"><input type="button" value="Create your account" class="bt" id="bt2"></a>
+        </main>
+
+        <!--頁尾-->
+        <footer style="background-color: #bebebe; color: #00003f;">
+            | CONTACT US |
+            <br><a href="mailto: huiyu010490@gmail.com"><img src="img/mail-b.png" class="mailimg"></a>
+            <br>Copyright © 2022 CYIM.
+        </footer>
+    </div>
+</body>
+
+</html>

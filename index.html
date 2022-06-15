@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/title.png">
+    <title>LateNight Record</title>
+    <style>
+        @import url('css/nav2.css');
+        @import url('css/func.css');
+        @import url('css/index.css');
+        @import url('css/top5.css');
+        @import url('css/footer.css');
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <!--店名、功能列-->
+        <div class="box">
+            <!--解決header fixed後遮到main上方部分內容-->
+            <header>
+                <div class="above">
+                    <a href="index.html" class="a-name">
+                        <div class="name">&nbsp;LateNight Record</div>
+                    </a>
+                    <div class="func">
+                        <a href="cart.html" class="a-func">CART</a>&emsp;
+                        <a href="login.html" class="a-func">LOGIN</a>&emsp;
+
+                        <!--功能頁-->
+                        <div class="menucont">
+                            <input type="checkbox" id="open" class="checkbox">
+                            <div class="func1">
+                                <label for="open" id="l">
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                </label>
+                            </div>
+                            <div class="menuo">
+                                <table class="mt">
+                                    <tr>
+                                        <td><a href="allproducts.html">ALL PRODUCTS</a></td>
+                                        <td><a href="aboutus.html">ABOUT US</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #inter" class="ac">INTERNATIONAL</a></td>
+                                        <td><a href="memberinfo.html" class="ac">Member Center</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #mand" class="ac">MANDARIN</a></td>
+                                        <td>
+                                            <input type="text" placeholder="Search" class="search">
+                                            <input type="button" value="search" class="sbt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #kor" class="ac">KOREAN</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="under"></div>
+            </header>
+        </div>
+
+        <!--CD-->
+        <main>
+            <div>
+                <img src="img/cd_text.png" alt="cd外圈文字" class="cd_text">
+                <div class="cd_pic"></div>
+            </div>
+            <div class="playblock">
+                <!--<input type="button" value="GO SHOPPING" class="gsb">-->
+                <h2>
+                    01:10<img src="img/playbar.png" alt="播放條" class="playbar">03:32
+                </h2>
+                <a href="allproducts.html"><img src="img/playbt2.png" alt="播放鍵" class="playbt"></a>
+            </div>
+        </main>
+
+        <!--TOP5-->
+        <section id="s1">
+            <hr>
+            <div class="container2">
+                <div class="container">
+                    <input type="radio" name="slider" class="hsinput" id="item-1" checked>
+                    <input type="radio" name="slider" class="hsinput" id="item-2">
+                    <input type="radio" name="slider" class="hsinput" id="item-3">
+                    <input type="radio" name="slider" class="hsinput" id="item-4">
+                    <input type="radio" name="slider" class="hsinput" id="item-5">
+
+                    <div class="cards">
+                        <label class="card" for="item-1" id="song-1">
+                            <div class="pro_out">
+                                <div class="pro_img" id="p1"></div>
+                                <div class="pro_text">
+                                    <span class="pro_name">Justice</span>
+                                    <br><span class="pro_singer">Justin Bieber</span>
+                                    <br><span class="pro_hr">-</span>
+                                    <br><span class="pro_price">$1150</span>
+                                    <a href="product.html"><button class="bt">view more</button></a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="card" for="item-2" id="song-2">
+                            <div class="pro_out">
+                                <div class="pro_img" id="p2"></div>
+                                <div class="pro_text">
+                                    <span class="pro_name">Positions</span>
+                                    <br><span class="pro_singer">Ariana Grande</span>
+                                    <br><span class="pro_hr">-</span>
+                                    <br><span class="pro_price">$860</span>
+                                    <a href="product.html"><button class="bt">view more</button></a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="card" for="item-3" id="song-3">
+                            <div class="pro_out">
+                                <div class="pro_img" id="p3"></div>
+                                <div class="pro_text">
+                                    <span class="pro_name">You Never Walk Alone</span>
+                                    <br><span class="pro_singer">BTS</span>
+                                    <br><span class="pro_hr">-</span>
+                                    <br><span class="pro_price">$1060</span>
+                                    <a href="product.html"><button class="bt">view more</button></a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="card" for="item-4" id="song-4">
+                            <div class="pro_out">
+                                <div class="pro_img" id="p4"></div>
+                                <div class="pro_text">
+                                    <span class="pro_name">Outta Body靈魂出竅</span>
+                                    <br><span class="pro_singer">瘦子E.SO</span>
+                                    <br><span class="pro_hr">-</span>
+                                    <br><span class="pro_price">$470</span>
+                                    <a href="product.html"><button class="bt">view more</button></a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="card" for="item-5" id="song-5">
+                            <div class="pro_out">
+                                <div class="pro_img" id="p5"></div>
+                                <div class="pro_text">
+                                    <span class="pro_name">LILAC</span>
+                                    <br><span class="pro_singer">IU</span>
+                                    <br><span class="pro_hr">-</span>
+                                    <br><span class="pro_price">$1120</span>
+                                    <a href="product.html"><button class="bt">view more</button></a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--活動分類-->
+        <section id="s2">
+            <div class="acout2">
+                <div class="acout">
+                    <div class="activity">SALES PROMOTION</div>
+                    <div class="acp">
+                        <ul>
+                            <li>All 4 Nothing</li>
+                            <li>Voicenotes</li>
+                            <li>街巷</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="acout">
+                    <div class="activity">NEW ARRIVAL</div>
+                    <div class="acp">
+                        <div>
+                            <ul>
+                                <li>LILAC</li>
+                                <li>Happier Than Ever</li>
+                                <li>INVU</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="acout">
+                    <div class="activity">CLASSICS</div>
+                    <div class="acp">
+                        <div>
+                            <ul>
+                                <li>11月的蕭邦</li>
+                                <li>You Never Walk Alone</li>
+                                <li>MADE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--動態廣告-->
+        <section id="s3">
+            <div class="marquee">
+                <p class="marp">
+                    "LateNight Record"
+                    意思是「深夜唱片行」，在深夜挑選一張喜歡的專輯，來杯小酒或咖啡，戴上耳機伴著夜色聆聽音樂。　　在台灣，唱片行的線上商城並不是很盛行，設計很陽春並不新穎，曲目也不多樣大宗，且大部分都是較有年代的歌。我們想說用年輕人的視角，來創立屬於我們的唱片行。
+                </p>
+            </div>
+        </section>
+
+        <!--頁尾-->
+        <footer style="background-color: #bebebe; color: #00003f;">
+            | CONTACT US |
+            <br><a href="mailto: huiyu010490@gmail.com"><img src="img/mail-b.png" class="mailimg"></a>
+            <br>Copyright © 2022 CYIM.
+        </footer>
+    </div>
+</body>
+
+</html>

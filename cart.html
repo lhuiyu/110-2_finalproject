@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/title.png">
+    <title>LateNight Record | CART</title>
+    <style>
+        @import url("css/nav2.css");
+        @import url("css/func.css");
+        @import url("css/cart.css");
+        @import url("css/footer.css");
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <!--店名、功能列-->
+        <div class="box">
+            <!--解決header fixed後遮到main上方部分內容-->
+            <header>
+                <div class="above">
+                    <a href="index.html" class="a-name">
+                        <div class="name">&nbsp;LateNight Record</div>
+                    </a>
+                    <div class="func">
+                        <a href="cart.html" class="a-func">CART</a>&emsp;
+                        <a href="login.html" class="a-func">LOGIN</a>&emsp;
+
+                        <!--功能頁-->
+                        <div class="menucont">
+                            <input type="checkbox" id="open" class="checkbox">
+                            <div class="func1">
+                                <label for="open" id="l">
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                </label>
+                            </div>
+                            <div class="menuo">
+                                <table class="mt">
+                                    <tr>
+                                        <td><a href="allproducts.html">ALL PRODUCTS</a></td>
+                                        <td><a href="aboutus.html">ABOUT US</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #inter" class="ac">INTERNATIONAL</a></td>
+                                        <td><a href="memberinfo.html" class="ac">Member Center</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #mand" class="ac">MANDARIN</a></td>
+                                        <td>
+                                            <input type="text" placeholder="Search" class="search">
+                                            <input type="button" value="search" class="sbt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #kor" class="ac">KOREAN</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="under"></div>
+            </header>
+        </div>
+
+        <!--購物車-->
+        <main>
+            <!--cart-->
+            <div class="cart">
+                <table class="c">
+                    <tr>
+                        <th colspan="3">
+                            <hr>
+                        </th>
+                    </tr>
+                    <!--pro1-->
+                    <tr>
+                        <td rowspan="4" class="imgtd">
+                            <div class="img" id="i1"></div>
+                        </td>
+                        <td colspan="2" class="t1">Happier Than Ever</td>
+                    </tr>
+                    <tr>
+                        <td class="t2">&emsp;&emsp;&emsp;UnitPrice</td>
+                        <td class="t2" id="m1a">950</td>
+                    </tr>
+                    <tr>
+                        <td class="t2">&emsp;&emsp;&emsp;Quantity</td>
+                        <td class="t2">
+                            <span id="m1b" onclick="m1f()">-&emsp;</span>
+                            <span id="m1c">1</span>
+                            <span id="m1d" onclick="m1g()">&emsp;+</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="t2">&emsp;&emsp;&emsp;Price</td>
+                        <td class="t2" id="m1e">950</td>
+                    </tr>
+
+                    <!--pro2-->
+                    <tr>
+                        <td rowspan="4" class="imgtd">
+                            <div class="img" id="i2"></div>
+                        </td>
+                        <td colspan="2" class="t1">LILAC</td>
+                    </tr>
+                    <tr>
+                        <td class="t2">&emsp;&emsp;&emsp;UnitPrice</td>
+                        <td class="t2" id="m2a">1120</td>
+                    </tr>
+                    <tr>
+                        <td class="t2">&emsp;&emsp;&emsp;Quantity</td>
+                        <td class="t2">
+                            <span id="m2b" onclick="m2f()">-&emsp;</span>
+                            <span id="m2c">1</span>
+                            <span id="m2d" onclick="m2g()">&emsp;+</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="t2">&emsp;&emsp;&emsp;Price</td>
+                        <td class="t2" id="m2e">1120</td>
+                    </tr>
+
+
+                    <!--結算線-->
+                    <tr>
+                        <td colspan="3">
+                            <div class="calculationline"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="totalp">
+                            <span class="t1">Total&emsp;&emsp;</span>
+                            <span class="t1" id="ttp">0&emsp;</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--personal info.-->
+            <form>
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                    <div class="out">
+
+                        <ul>
+                            <li><label>Name&emsp;&emsp;&nbsp;&nbsp;<input type="text" class="ipb"></label></li>
+                            <li><label>MobileNum<input type="tel" class="ipb"></label></li>
+                            <li><label>Address&emsp;&nbsp;&nbsp;<input type="text" class="ipb"></label></li>
+                            <li>Payment Methods
+                                <label for="Cash"><input type="radio" name="Payment" class="ipr" id="Cash"
+                                        value="Cash">Cash</label>
+                                <label for="Credit"><input type="radio" name="Payment" class="ipr" id="Credit"
+                                        value="Credit">Credit
+                                    Card</label>
+                                <label for="WebATM"><input type="radio" name="Payment" class="ipr" id="WebATM"
+                                        value="WebATM">WebATM</label>
+                            </li>
+                            <li>Shipping Methods
+                                <label for="Post"><input type="radio" name="Shipping" id="Post" class="ipr"
+                                        value="Post">Post</label>
+                                <label for="7-11"><input type="radio" name="Shipping" id="7-11" class="ipr"
+                                        value="7-11">7-11</label>
+                                <label for="Family"><input type="radio" name="Shipping" id="Family" class="ipr"
+                                        value="Family">Family</label>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <input type="submit" value="CHECK OUT" class="bt">
+            </form>
+        </main>
+
+        <!--頁尾-->
+        <footer style="background-color: #bebebe; color: #00003f;">
+            | CONTACT US |
+            <br><a href="mailto: huiyu010490@gmail.com"><img src="img/mail-b.png" class="mailimg"></a>
+            <br>Copyright © 2022 CYIM.
+        </footer>
+    </div>
+</body>
+<script src="js/cart.js"></script>
+
+</html>

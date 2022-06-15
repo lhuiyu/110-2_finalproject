@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/title.png">
+    <title>LateNight Record | Backstage</title>
+    <style>
+        @import url("css/nav2.css");
+        @import url("css/func.css");
+        @import url("css/backstage.css");
+        @import url("css/footer.css");
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <!--店名、功能列-->
+        <div class="box">
+            <!--解決header fixed後遮到main上方部分內容-->
+            <header>
+                <div class="above">
+                    <a href="index.html" class="a-name">
+                        <div class="name">&nbsp;LateNight Record</div>
+                    </a>
+                    <div class="func">
+                        <a href="cart.html" class="a-func">CART</a>&emsp;
+                        <a href="login.html" class="a-func">LOGIN</a>&emsp;
+
+                        <!--功能頁-->
+                        <div class="menucont">
+                            <input type="checkbox" id="open" class="checkbox">
+                            <div class="func1">
+                                <label for="open" id="l">
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                    <span class="f" style="background-color: #bebebe;"></span>
+                                </label>
+                            </div>
+                            <div class="menuo">
+                                <table class="mt">
+                                    <tr>
+                                        <td><a href="allproducts.html">ALL PRODUCTS</a></td>
+                                        <td><a href="aboutus.html">ABOUT US</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #inter" class="ac">INTERNATIONAL</a></td>
+                                        <td><a href="memberinfo.html" class="ac">Member Center</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #mand" class="ac">MANDARIN</a></td>
+                                        <td>
+                                            <input type="text" placeholder="Search" class="search">
+                                            <input type="button" value="search" class="sbt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&emsp;<a href="allproducts.html #kor" class="ac">KOREAN</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="under"></div>
+            </header>
+        </div>
+
+        <!--後台介面-->
+        <main>
+            <!--新增商品-->
+            <form>
+                <fieldset class="fi" id="fi1">
+                    <legend>新增商品</legend>
+                    <div class="inner">
+                        <label>商品照片：</label><input type="text" class="b">
+                        <br><label>商品名稱：</label><input type="text" class="b">
+                        <br><label>商品介紹：</label><input type="textarea" class="b">
+                        <br><label>商品價錢：</label><input type="text" class="b">
+                        <br><label>商品庫存：</label><input type="number" class="b">
+                        <br><input type="submit" value="新增" class="backbt">
+                    </div>
+                </fieldset>
+            </form>
+
+            <!--修改商品-->
+            <form>
+                <fieldset class="fi" id="fi2">
+                    <legend>修改商品</legend>
+                    <div class="inner">
+                        <label>商品照片：</label><input type="text" class="b">
+                        <br><label>商品舊名：</label>
+                        <select name="bp" class="b2">
+                            <optgroup label="INTERNATIONAL">
+                                <option>Justice</option>
+                                <option>Position</option>
+                                <option>Future Nostalgia</option>
+                                <option>All 4 Nothing</option>
+                                <option>Lover</option>
+                                <option>Voicenotes</option>
+                                <option>Happier Than Ever</option>
+                                <option>Illuminate</option>
+                            </optgroup>
+                            <optgroup label="MANDARIN">
+                                <option>11月的蕭邦</option>
+                                <option>Ugly Beauty</option>
+                                <option>運氣來得若有似無</option>
+                                <option>我們以後要結婚</option>
+                                <option>Outta Body靈魂出竅</option>
+                                <option>終於了解自由</option>
+                                <option>5 am</option>
+                                <option>街巷</option>
+                            </optgroup>
+                            <optgroup label="KOREAN">
+                                <option>You Never Walk Alone</option>
+                                <option>LILAC</option>
+                                <option>MADE</option>
+                                <option>Summer Nights</option>
+                                <option>The Album</option>
+                                <option>The War</option>
+                                <option>reality in BLACK</option>
+                                <option>INVU</option>
+                            </optgroup>
+                        </select>
+                        <br><label>商品新名：</label><input type="textarea" class="b">
+                        <br><label>商品介紹：</label><input type="textarea" class="b">
+                        <br><label>商品價錢：</label><input type="text" class="b">
+                        <br><label>商品庫存：</label><input type="number" class="b">
+                        <br><input type="submit" value="修改" class="backbt">
+                    </div>
+                </fieldset>
+            </form>
+
+            <!--刪除商品-->
+            <form>
+                <fieldset class="fi" id="fi3">
+                    <legend>刪除商品</legend>
+                    <div class="inner">
+                        <label>商品：</label>
+                        <select name="bp" class="b2">
+                            <optgroup label="INTERNATIONAL">
+                                <option>Justice</option>
+                                <option>Position</option>
+                                <option>Future Nostalgia</option>
+                                <option>All 4 Nothing</option>
+                                <option>Lover</option>
+                                <option>Voicenotes</option>
+                                <option>Happier Than Ever</option>
+                                <option>Illuminate</option>
+                            </optgroup>
+                            <optgroup label="MANDARIN">
+                                <option>11月的蕭邦</option>
+                                <option>Ugly Beauty</option>
+                                <option>運氣來得若有似無</option>
+                                <option>我們以後要結婚</option>
+                                <option>Outta Body靈魂出竅</option>
+                                <option>終於了解自由</option>
+                                <option>5 am</option>
+                                <option>街巷</option>
+                            </optgroup>
+                            <optgroup label="KOREAN">
+                                <option>You Never Walk Alone</option>
+                                <option>LILAC</option>
+                                <option>MADE</option>
+                                <option>Summer Nights</option>
+                                <option>The Album</option>
+                                <option>The War</option>
+                                <option>reality in BLACK</option>
+                                <option>INVU</option>
+                            </optgroup>
+                        </select>
+                        <br><input type="submit" value="刪除" class="backbt">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+
+        <!--頁尾-->
+        <footer style="background-color: #bebebe; color: #00003f;">
+            | CONTACT US |
+            <br><a href="mailto: huiyu010490@gmail.com"><img src="img/mail-b.png" class="mailimg"></a>
+            <br>Copyright © 2022 CYIM.
+        </footer>
+    </div>
+</body>
+
+</html>
