@@ -83,6 +83,14 @@ hr::before{
     font-size: 25px;
     color: gray;
 }
+.deletebt{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    float: right;
+    color: #80808065;
+    background-color: #00003f;
+    border: none;
+}
 
 .number{
     border: none;
