@@ -1,0 +1,69 @@
+*{  
+    padding: 0;
+    margin: 0;
+    /*outline: solid red 1px !important;*/  
+}
+.bg{
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #bebebe;
+}
+
+/*商品總覽*/
+main{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.category{
+    display: inline-block;
+    justify-content: space-evenly;
+    width: 1400px;
+    margin: 20px auto 20px;
+}
+.category_top{
+    border: solid gray 3px;
+    height: 40px;
+    width: 250px;
+    font-size: 30px;
+    color: gray;
+    font-style: oblique;
+    text-align: center;
+    margin:  10px auto 0;
+    box-shadow: 1px 1px white, -1px -1px #444;
+    text-shadow: 1px 1px white;
+}
+.pro_out{
+    margin: 20px;
+    border: solid #00003f 3px;
+    width: 300px;
+    height: 410px;
+    display: inline-block;
+    transition: 0.2s;
+}
+.pro_out:hover{
+    border: solid gray 3px;
+}
+.pro_img{
+    border: solid #00003f 1px;
+    margin:8px auto 0px;
+    width: 280px;
+    height: 280px;
+}
+.img{
+    width: 280px;
+    height: 280px;
+}
+.pro_text{
+    margin: auto;
+    width: 280px;
+    height: 110px;
+    color: #00003f;
+}
+.pro_name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.pro_singer, .pro_price, .pro_hr{
+    font-size: 20px;
+}

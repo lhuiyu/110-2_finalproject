@@ -1,0 +1,192 @@
+*{  
+    padding: 0;
+    margin: 0;
+    /*outline: solid red 1px !important;*/  
+}
+.bg{
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #bebebe;
+}
+
+/*個人資訊*/
+main{
+    width: 100%;
+    height: 450px;
+}
+.basicsp{
+    width: 1100px;
+    height: 360px;
+    margin: 80px auto;
+}
+.baimg{
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: relative;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    background-color: #bebebe;
+    z-index: 2;
+}
+.baimg2{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    transform:scale(1,1);
+    transition: all 0.6s ease-out;    
+    opacity: 0.7;
+}
+.baimg2:hover{
+    box-shadow: 0px 50px 100px gray;
+    transform:scale(1.05,1.05);
+    opacity: 1;
+}
+.babor{
+    border: solid 3px #00003f;
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    float: right;
+    position: relative;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    padding: 10px 20px 10px 100px;
+}
+.ba1{
+    color: gray;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: oblique;
+    text-shadow: 1px 1px white;
+    line-height: 60px;
+}
+.ba2{
+    color: #00003f;
+    font-size: 30px;
+    line-height: 50px;
+}
+.t{
+    border: none;
+    border-bottom: solid 1px #00003f;
+    background-color: #bebebe;
+    line-height: 30px;
+    font-size: 25px;
+}
+.t::placeholder{
+    color: gray;
+}
+.babt{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: #bebebe;
+    background-color: #00003f;
+    border-color: #00003f;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    float: right;
+}
+.babt:active{
+    border: solid gray 2px;
+    background-color: #bebebe;
+    color: #00003f;
+    box-shadow: 1px 1px white, -1px -1px #444;
+}
+
+
+/*訂單紀錄*/
+section{
+    width: 100%;
+    height: auto;
+}
+hr{
+    color: gray;
+    border: 0;
+    font-size: 30px;
+    padding: 30px 0 20px;
+    position: relative;
+}
+hr::before{
+    content: "SHOPPING SHEET";
+    position: absolute;
+    padding: 0 10px;
+    line-height: 2px;
+    border: solid gray;
+    border-width: 0 250px;
+    white-space: nowrap; /*頁面壓縮時文字不會壓縮*/
+    /*使置中 left父trans子*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+.order{
+    height: auto;
+    margin: 30px auto;
+}
+.orr{
+    border-top: solid 4px #00003f;
+    border-bottom: solid 4px #00003f;
+    width: 500px;
+    height: 145px;
+    text-align: center;
+    font-size: 25px;
+    color: #00003f;
+    padding: 20px auto;
+    line-height: 35px;
+    margin: 30px auto 10px;
+}
+.membt{
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+    width: 120px;
+    margin: -5px auto 10px;
+}
+.imgtd{
+    width: 230px;
+}
+.orde{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00003f10;
+    padding: 20px;
+    transition: transform 0.5s linear;
+    opacity: 0;
+    color: #00003f;
+}
+.ordet1{
+    font-size: 23px;
+    font-weight: bold;
+}
+.ordet2{
+    font-size: 18px;
+}
+.orimg{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+#orimg1{
+    background-image: url(../img/mad5.jpg);
+    background-size: cover;
+}
+#orimg2{
+    background-image: url(../img/kor8.jpg);
+    background-size: cover;
+}
+.ordet{
+    color: #00003f;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.divl{
+    width: 100%;
+    border-top: solid 1px gray;
+}
+
+.membt:hover~.orde{
+    transform: translateY(20px);
+    opacity: 1;
+}

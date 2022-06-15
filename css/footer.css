@@ -1,0 +1,11 @@
+/*頁尾*/
+footer{
+    height: 85px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 10px;
+}
+.mailimg{
+    width: 40px;
+}

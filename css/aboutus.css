@@ -1,0 +1,112 @@
+*{  
+    padding: 0;
+    margin: 0;
+    /*outline: solid red 1px;*/
+}
+.bg{
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #00003f;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    border: solid gray 3px;
+    height: 40px;
+    width: 250px;
+    font-size: 30px;
+    color: gray;
+    font-style: oblique;
+    text-align: center;
+    margin:  30px auto;
+    box-shadow: 1px 1px white, -1px -1px #444;
+    text-shadow: 1px 1px white;
+}
+.member{
+    margin: 20px auto;
+    height: auto;
+}
+.mem{
+    width: 900px;
+    margin: 40px auto;
+    position: relative;
+}
+.memimg, .memimg2{
+    border: solid #bebebe 3px;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 10px 100px gray;
+    z-index: 2;
+    transition: transform 1s ease;
+}
+#m1{
+    background-image: url(../img/10944235.jpeg);
+    background-size: cover;
+}
+#m2{
+    background-image: url(../img/10944243.jpg);
+    background-size: cover;
+}
+#m3{
+    background-image: url(../img/10944106.jpg);
+    background-size: cover;
+}
+#m4{
+    background-image: url(../img/10944144.jpg);
+    background-size: cover;
+}
+.memcont, .memcont2{
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+    background-color: #bebebe;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00003f;
+    transition: transform 1s ease;
+    opacity: 0;
+}
+.memimg:hover{
+    transform: translateX(-450px);
+}
+.memimg:hover ~.memcont{
+    transform: translateX(-90px);
+    opacity: 100%;
+}
+.memimg2:hover{
+    transform: translateX(92px);
+}
+.memimg2:hover ~.memcont2{
+    transform: translateX(-450px);
+    opacity: 100%;
+}
+.memi{
+    font-size: 18px;
+}
+.memn{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.memo{
+    font-size: 20px;
+    font-style: oblique;
+}
+.memt{
+    font-size: 20px;
+}
+.icon{
+    width: 80px;
+    float: right;
+}

@@ -1,0 +1,274 @@
+*{  
+    padding: 0;
+    margin: 0;
+    /*outline: solid red 1px;*/
+}
+.bg{
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #bebebe;
+}
+
+/*商品*/
+main{
+    height: auto;
+}
+/*基本資訊*/
+.pro_info{
+    width: 1100px;
+    height: 450px;
+    border: solid #00003f 3px;
+    margin: 20px auto 20px;
+}
+.pro{
+    width: 1010px;
+    height: 400px;
+    margin: 23px auto;
+}
+.pro_img{
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+.pro_text{
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    position: relative;
+    top: -40px;
+}
+.category{
+    font-size: 22px;
+    color: gray;
+    line-height: 50px;
+    font-style: oblique;
+    text-shadow: 1px 1px white;
+}
+.aname{
+    font-size: 50px;
+    color: #00003f;
+    text-shadow: 4px 5px 3px gray;
+}
+.buyf{
+    width: 500px;
+    position: relative;
+    left: -16px;
+}
+.text{
+    font-size: 30px;
+    color: #00003f;
+}
+.number{
+    border: none;
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+    background-color: #bebebe;
+    color: #00003f;
+    font-size: 25px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+.numbt{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    color: #00003f;
+    background-color: #bebebe;
+    border: solid gray 1px;
+}
+.line{
+    border-top: solid #00003f 2px;
+    width: 100%;
+    margin: 20px auto;
+}
+.bt{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #bebebe;
+    background-color: #00003f;
+    border-color: #010125;
+    border-radius: 5px;
+}
+#bt1{
+    width: 170px;
+    height: 40px;
+    font-size: 25px;
+    position: relative;
+    left: 320px;
+}
+
+/*詳細資訊*/
+.pro_desc{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+.hori_line{
+    border-top: solid #00003f 5px;
+    width: 150px;
+    height: 1px;
+}
+.title{
+    color: #00003f;
+    font-size: 30px;
+}
+.subtitle{
+    list-style: none;
+    color: #00003f;
+    font-size: 25px;
+}
+.song{
+    list-style: circle;
+    margin-left: 50px;
+    color: #00003f;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*評價*/
+section{
+    height: auto;
+}
+.comment{
+    width: 1100px;
+    height: auto;
+    margin: 50px auto;
+}
+.comment_box{
+    border: solid #00003f 3px;
+    border-radius: 10px;
+    width: 1095px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+.comtext{
+    line-height: 30px;
+    color: #00003f;
+}
+.date{
+    font-size: 16px;
+}
+.memname, .star{
+    font-size: 25px;
+}
+.cont{
+    font-size: 20px;
+}
+.star{
+    text-shadow: 4px 5px 3px gray;
+}
+
+form{
+    padding: 16px;
+    width: 100%;
+}
+.comn{
+    border: none;
+    border-bottom: solid gray  2px;
+    background-color: transparent;
+    font-size: 16px;
+    width: 200px;
+    line-height: 30px;
+}
+.comt{
+    font-size: 16px;
+    border: solid gray 2px;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+}
+
+#bt2{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+    float: right;
+}
+.comn::placeholder, .comt::placeholder{
+    color: gray;
+}
+.stars{
+    appearance: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/star1.png");
+    background-size: cover;
+    margin: 10px auto;
+}
+.stars:checked {
+    background-image: url("../img/star2.png");
+    background-size: cover;
+}
+
+
+
+/*推薦商品*/
+aside{
+    height: auto;
+}
+.rec{
+    height: auto;
+    margin: 10px auto;
+}
+hr{
+    color: gray;
+    border: 0;
+    font-size: 25px;
+    padding: 90px 0 5px;
+}
+hr::before{
+    content: "YOU MAY ALSO LIKE";
+    position: absolute;
+    padding: 0 10px;
+    line-height: 1px;
+    border: solid gray;
+    border-width: 0 300px;
+    white-space: nowrap; /*頁面壓縮時文字不會壓縮*/
+    /*使置中 left父trans子*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+.recpro_outframe{
+    width: 1035px;
+    margin: 20px auto 0;
+}
+.recpro_out{
+    margin: 10px;
+    border: solid #00003f 3px;
+    width: 230px;
+    height: 320px;
+    display: inline-block;
+    transition: 0.2s;
+}
+.recpro_out:hover{
+    border: solid gray 3px;
+}
+.recpro_img{
+    border: solid #00003f 1px;
+    margin:8px auto 0px;
+    width: 210px;
+    height: 210px;
+}
+.recimg{
+    width: 210px;
+    height: 210px;
+}
+.recpro_text{
+    margin: 5px auto;
+    width: 210px;
+    height: 85px;
+    color: #00003f;
+}
+.recpro_name{
+    font-size: 20px;
+}
+.recpro_singer, .recpro_price, .recpro_hr{
+    font-size: 15px;
+}

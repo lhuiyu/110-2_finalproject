@@ -1,0 +1,51 @@
+/*上面的 店名、功能列*/
+.box{
+    height: 80px;
+}
+header{
+    background-color: #00003f;
+    height: 80px;
+    width: 100%;
+    color: #bebebe;
+    position: fixed;
+    z-index: 5;
+}
+.above{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    font-size: 50px;
+    display: inline-block;
+}
+.func{
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+}
+.a-name{
+    text-decoration: none;
+}
+.a-name:visited{
+    color: #bebebe;
+}
+.a-func{
+    text-decoration: none;
+}
+.a-func:visited{
+    color: #bebebe;
+}
+.a-func:active{
+    color: gray;
+}
+.func1{
+    width: 35px;
+    height: 25px;
+}
+.under{
+    height: 20%;
+    background-color: #bebebe;
+}

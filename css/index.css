@@ -1,0 +1,159 @@
+*{  
+    padding: 0;
+    margin: 0;
+    /*outline: solid red 1px;*/
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #00003f;
+}
+
+/*cd*/
+main{
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+.cd_text{
+    width: 800px;
+    animation: circle 25s linear infinite;
+    position: relative;
+    top: 10px;
+}
+@keyframes circle{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.cd_pic{
+    width: 620px;
+    height: 620px;
+    background-color: #455882;
+    border: 8px #EEE7DE solid; 
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: -710px;
+    /*display: flex;*/
+}
+.cd_pic::before{
+    content: '';
+    width: 90px;
+    height: 90px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid #EEE7DE;
+}
+.cd_pic::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: #00003f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+/*音樂播放條/鍵*/
+.playblock{
+    width: 1200px;
+    position: relative;
+    top: -860px;
+    margin: auto;
+    color: #bebebe;
+}
+.playbar{
+    width: 900px;
+    margin: auto 20px;
+}
+.playbt{
+    width: 150px;
+}
+.gsb{
+    width: 200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: #00003f;
+    background-color: #bebebe;
+    border: solid 2px gray;
+
+}
+
+/*活動分類*/
+#s2{
+    width: 100%;
+    height: auto;
+}
+.acout2{
+    width: 1000px;
+    margin: 100px auto 80px;
+    display:flex;
+    justify-content: space-between;
+}
+.acout{
+    display: inline-block;
+    text-align: center;
+}
+.activity{
+    font-size: 30px;
+    color: #bebebe;
+    box-shadow: 1px 1px #bebeeb, -1px -1px #444;
+}
+.acp{
+    width: 300px;
+    height: 200px;
+    background-color: #bebebe;
+    border-radius: 10px;
+    opacity: 0;
+    transition: transform 0.5s linear;
+}
+.acp li{
+    list-style: none;
+    font-size: 25px;
+    color: #00003f;
+    line-height: 66px;
+}
+.activity:hover ~.acp{
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+
+
+/*動態廣告*/
+#s3{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+}
+.marquee{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.marp{
+    font-size: 25px;
+    font-weight: bold;
+    color: #bebebe;
+    white-space: nowrap;
+    transform: translateX(0);
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
