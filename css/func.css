@@ -44,7 +44,7 @@
 .menuo {
     background-color: gray;
     position: absolute;
-    transform: translateX(100px);
+    transform: translateX(110px);
     transform-origin: (0, 0);
     width: 100vw;
     height: 100vh;
