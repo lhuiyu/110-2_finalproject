@@ -29,6 +29,7 @@ header{
 .a-name{
     text-decoration: none;
 }
+
 .a-name:visited{
     color: #bebebe;
 }
@@ -40,6 +41,12 @@ header{
 }
 .a-func:active{
     color: gray;
+}
+.a-func:link{
+    color: #bebebe;
+}
+.a-name:link{
+    color: #bebebe;
 }
 .func1{
     width: 35px;
