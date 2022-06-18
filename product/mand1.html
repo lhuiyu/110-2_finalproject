@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/title.png">
+    <title>LateNight Record | Product</title>
+
+    <style>
+        @import url("../css/nav.css");
+        @import url("../css/func.css");
+        @import url("../css/product.css");
+        @import url("../css/footer.css");
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <!--店名、功能列-->
+        <div class="box">
+            <!--解決header fixed後遮到main上方部分內容-->
+            <header>
+                <div class="above">
+                    <a href="../index.html" class="a-name">
+                        <div class="name">&nbsp;LateNight Record</div>
+                    </a>
+                    <div class="func">
+                        <a href="../cart.html" class="a-func">CART</a>&emsp;
+                        <a href="../login.html" class="a-func">LOGIN</a>&emsp;
+
+                        <!--功能頁-->
+                        <div class="menucont">
+                            <input type="checkbox" id="open" class="checkbox">
+                            <div class="func1">
+                                <label for="open" id="l">
+                                    <span class="f" style="background-color: #00003f;"></span>
+                                    <span class="f" style="background-color: #00003f;"></span>
+                                    <span class="f" style="background-color: #00003f;"></span>
+                                    <span class="f" style="background-color: #00003f;"></span>
+                                </label>
+                            </div>
+                            <div class="menuo">
+                                <table class="mt">
+                                    <tr>
+                                        <td><a href="../allproducts.html">ALL PRODUCTS</a></td>
+                                        <td><a href="../aboutus.html">ABOUT US</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="../backlogin.html" class="ac">Backstage</a></td>
+                                        <td><a href="../memberinfo.html" class="ac">Member Center</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="text" placeholder="Search" class="search">
+                                            <input type="button" value="search" class="sbt">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="under"></div>
+            </header>
+        </div>
+
+        <!--商品-->
+        <main>
+            <!--基本資訊-->
+            <div class="pro_info">
+                <div class="pro">
+                    <div class="pro_img">
+                        <img src="../img/mad1.jpg" class="img">
+                    </div>
+                    <div class="pro_text">
+                        <span class="category">MANDARIN</span>
+                        <br><span class="aname">11月的蕭邦</span>
+                        <br><span class="text">周杰倫</span>
+                        <br><span class="text">－</span>
+                        <br><span class="text">$730</span>
+                        <form class="buyf">
+                            <div>
+                                <span class="text">Quantity&nbsp;&nbsp;</span>
+                                <input type="button" class="numbt" value="-" id="minusbt" onclick="minusNum()">
+                                <input type="text" class="number" value="1" id="num">
+                                <input type="button" class="numbt" value="+" id="addbt" onclick="addNum()">
+                            </div>
+                            <div class="line"></div>
+                            <input type="submit" value="ADD TO CART" class="bt" id="bt1" onclick="submit()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--詳細資訊-->
+            <div class="pro_desc">
+                <div class="hori_line"></div>
+                <h2 class="title">Product Description<span class="subtitle">－AlbumTracks</span></h2>
+                <ul class="song">
+                    <li>夜曲</li>
+                    <li>藍色風景</li>
+                    <li>髮如雪</li>
+                    <li>黑色毛衣</li>
+                    <li>四面楚歌</li>
+                    <li>楓</li>
+                    <li>浪漫手機</li>
+                    <li>逆麟</li>
+                    <li>麥芽糖</li>
+                    <li>珊瑚海</li>
+                    <li>飄移</li>
+                    <li>一路向北</li>
+                </ul>
+            </div>
+        </main>
+
+        <!--評價-->
+        <section>
+            <div class="comment">
+                <div class="hori_line"></div>
+                <h2 class="title">Comment</h2>
+                <div class="comment_box">
+                    &emsp;<img
+                        src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/90/undefined/external-cd-music-and-multimedia-smashingstocks-hand-drawn-black-smashing-stocks.png"
+                        class="compic">
+                    &emsp;&emsp;
+                    <div class="comtext">
+                        <span class="date">2022/05/28</span>
+                        <br><span class="memname">Linda</span>
+                        <span class="star">&nbsp;★★★★★</span>
+                        <br>&emsp;&emsp;<span class="cont">良心店家，價格很合理，下次要買專輯的話會再回購！</span>
+                    </div>
+                </div>
+                <div class="comment_box">
+                    &emsp;<img
+                        src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/90/undefined/external-cd-music-and-multimedia-smashingstocks-hand-drawn-black-smashing-stocks.png"
+                        class="compic">
+                    &emsp;&emsp;
+                    <div class="comtext">
+                        <span class="date">2022/06/01</span>
+                        <br><span class="memname">Eva</span>
+                        <span class="star">&nbsp;★★★★★</span>
+                        <br>&emsp;&emsp;<span class="cont">杰倫我老公！！</span>
+                    </div>
+                </div>    
+                <div class="comment_box">
+                    &emsp;<img
+                        src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/90/undefined/external-cd-music-and-multimedia-smashingstocks-hand-drawn-black-smashing-stocks.png"
+                        class="compic">
+                    &emsp;&emsp;
+                    <div class="comtext">
+                        <span class="date">2022/06/01</span>
+                        <br><span class="memname">Jason</span>
+                        <span class="star">&nbsp;★★★★★</span>
+                        <br>&emsp;&emsp;<span class="cont">超讚，包裝完整，音質不錯~</span>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_box">
+                <form>
+                    <input id="name" type="text" placeholder="Name" class="comn"><br>
+                    <div class="rating">
+                        <input type="radio" name="star" class="stars" id="ws1" onclick="ws1()">
+                        <input type="radio" name="star" class="stars" id="st2" onclick="st2()">
+                        <input type="radio" name="star" class="stars" id="st3" onclick="st3()">
+                        <input type="radio" name="star" class="stars" id="st4" onclick="st4()">
+                        <input type="radio" name="star" class="stars" id="st5" onclick="st5()">
+                    </div>
+                    <input type="textarea" name="comment" placeholder="COMMENT" class="comt">
+                    <br><input type="submit" value="SEND" class="bt" id="bt2">
+                </form>
+            </div>
+        </section>
+
+        <!--推薦商品-->
+        <aside>
+            <div class="rec">
+                <hr>
+                <div class="recpro_outframe">
+                    <a href="mand2.html" target="_blank">
+                        <div class="recpro_out">
+                            <div class="recpro_img">
+                                <img src="../img/mad2.jpg" class="recimg">
+                            </div>
+                            <div class="recpro_text">
+                                <span class="recpro_name">Ugly Beauty</span>
+                                <br><span class="recpro_singer">蔡依林</span>
+                                <br><span class="recpro_hr">－</span>
+                                <br><span class="recpro_price">$680</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mand3.html" target="_blank">
+                        <div class="recpro_out">
+                            <div class="recpro_img">
+                                <img src="../img/mad3.jpg" class="recimg">
+                            </div>
+                            <div class="recpro_text">
+                                <span class="recpro_name">運氣來得若有似無</span>
+                                <br><span class="recpro_singer">告五人</span>
+                                <br><span class="recpro_hr">－</span>
+                                <br><span class="recpro_price">$540</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mand4.html" target="_blank">
+                        <div class="recpro_out">
+                            <div class="recpro_img">
+                                <img src="../img/mad4.jpg" class="recimg">
+                            </div>
+                            <div class="recpro_text">
+                                <span class="recpro_name">Outta Body靈魂出竅</span>
+                                <br><span class="recpro_singer">瘦子E.SO</span>
+                                <br><span class="recpro_hr">－</span>
+                                <br><span class="recpro_price">$470</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mand5.html" target="_blank">
+                        <div class="recpro_out">
+                            <div class="recpro_img">
+                                <img src="../img/mad5.jpg" class="recimg">
+                            </div>
+                            <div class="recpro_text">
+                                <span class="recpro_name">終於了解自由</span>
+                                <br><span class="recpro_singer">周興哲</span>
+                                <br><span class="recpro_hr">－</span>
+                                <br><span class="recpro_price">$520</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!--頁尾-->
+        <footer style="background-color: #00003f; color: #bebebe;">
+            | CONTACT US |
+            <br><a href="mailto: huiyu010490@gmail.com"><img src="../img/mail-g.png" class="mailimg"></a>
+            <br>Copyright © 2022 CYIM.
+        </footer>
+    </div>
+</body>
+<script src="../js/calbt.js"></script>
+<script src="../js/comstar.js"></script>
+
+</html>
